@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fastodo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Fastodo</h2>
+            <ul>
+                <li><a href="#" onclick="showList('life')">Life</a></li>
+                <li><a href="#" onclick="showList('work')">Work</a></li>
+                <li><a href="#" onclick="createNewList()">+ New List</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div id="currentDate" class="date-time"></div>
+            <p>What's your plan for today?</p>
+            <form>
+                <input type="text" id="searchTodo" placeholder="Search Todo">
+                <input type="text" id="newTask" placeholder="New Task">
+                <input type="date" id="dueDate">
+                <button type="button" onclick="addTask()">Add Task</button>
+            </form>
+            <ul id="todoList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
